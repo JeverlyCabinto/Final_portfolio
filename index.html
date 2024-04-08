@@ -1,0 +1,117 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+</head>
+
+<body class="bg-gray-100">
+    <header class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <img src="3.JPG" width="250" height="250" class="rounded-full m-4" alt="Profile Image">
+            <h1 class="text-5xl font-bold">Hi! I am Jeverly Ruth Cabinto.</h1>
+        </div>
+    </header>
+    <!-- Inside the header or navigation section -->
+<nav class="bg-gray-700 py-4">
+    <div class="container mx-auto flex justify-around items-center">
+        <button id="btn-about" class="btn-section bg-gray-800 hover:bg-gray-600 text-white px-4 py-2 rounded-lg">About Me</button>
+        <button id="btn-education" class="btn-section bg-gray-800 hover:bg-gray-600 text-white px-4 py-2 rounded-lg">Education</button>
+        <button id="btn-experience" class="btn-section bg-gray-800 hover:bg-gray-600 text-white px-4 py-2 rounded-lg">Experience</button>
+        <button id="btn-skills" class="btn-section bg-gray-800 hover:bg-gray-600 text-white px-4 py-2 rounded-lg">Skills</button>
+        <button id="btn-contact" class="btn-section bg-gray-800 hover:bg-gray-600 text-white px-4 py-2 rounded-lg">Contact</button>
+    </div>
+</nav>
+
+    <main class="container mx-auto py-8">
+        <section id="about" class="mb-8">
+            <h2 class="text-3xl font-bold">About Me</h2>
+            <p class="text-lg">As a recent Information Technology graduate, I am passionate about leveraging my skills and knowledge to contribute to innovative projects and solutions in the IT industry. With a strong foundation in programming languages, software development, networking, and cybersecurity. I am eager to apply my expertise and continue learning and growing in the field.</p>
+        </section>
+
+        <section id="education" class="mb-8">
+            <h2 class="text-3xl font-bold">Education</h2>
+            <ul class="text-lg list-disc">
+                <li class="text-lg"> Bachelor of Science in Information Technology Major in Network and Security Track
+                    <p>University of The Cordilleras, Gov. Pack Road, Baguio City </p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="experience" class="mb-8">
+            <h2 class="text-3xl font-bold">Experience</h2>
+            <ul class="text-lg list-disc">
+                <li class="text-lg"> Web Development</li>
+                <p class="text-lg"> I have an experience in Web Development with the use of HTML, CSS, and Javascript.</p>
+                <li class="text-lg"> Networking</li>
+                <p class="text-lg"> Since my major track is Network and Security, I have a deep understanding with the concepts involved in networking. I have experienced configuring different devices and troubleshooting networks.
+                </p>
+                <li class="text-lg"> Project Management</li>
+                <p class="text-lg"> I have also experienced project management and have a wide understanding with different methodologies used in managing a project. Additionally, I was able to explore different Project Management Software tools such as Zoho, Jira, and trello.</p>
+            </ul>
+            <section id="Trainings" class="mb-8">
+                <h2 class="text-3xl font-bold">Certificates and Trainings</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 mt-4">
+                    <div>
+                        <h4 class="text-lg font-bold">AI Designing</h4>
+                        <img src="4.png" width="300" height="250" alt="Certificate1 Image" class="rounded-lg shadow-lg">
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold">Graphic Designs</h4>
+                        <img src="5.png" width="300" height="250" alt="Certificate2 Image" class="rounded-lg shadow-lg">
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold">Virtual Assistant</h4>
+                        <img src="6.png" width="300" height="250" alt="Certificate3 Image" class="rounded-lg shadow-lg">
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold">Webinar Automation and Email Marketing</h4>
+                        <img src="7.png" width="300" height="250" alt="Certificate4 Image" class="rounded-lg shadow-lg">
+                    </div>
+                    <!-- Add more certificates and images as needed -->
+                </div>
+            </section>
+            
+
+        <section id="skills" class="mb-8">
+            <h2 class="text-3xl font-bold">Skills</h2>
+            <ul class="text-lg list-disc">
+                <li> Skilled with Programming Languages such as Python, Java, and Javascript.</li>
+                <li> Skilled with Software Development: Object-Oriented Programming (OOP), Software Testing and Debugging, and Version Control (Git).</li>
+                <li> Skilled at network Configuration and troubleshooting.</li>
+                <li> Project Management: Project Planning and Execution</li>
+                <li> Effective Communication skills </li>
+            </ul>
+        </section>
+
+        <section id="contact" class="mb-8">
+            <h2 class="text-3xl font-bold">Contact Information</h2>
+            <ul class="text-lg list-disc">
+                <li class="text-lg"> Contact Number: 09123456789</li>
+                <li class="text-lg"> Gmail: jeverlycabinto@gmail.com</li>
+                <li class="text-lg"> Facebook/Messenger: Jeverly Ruth</li>
+            </ul>
+            <h4 class="text-lg"> Or Send your Message by filling up the form Below.</h4>
+            <form id="contact-form" class="flex flex-col gap-4 max-w-md">
+                <label for="name" class="text-lg">Name:</label>
+                <input type="text" id="name" name="name" required class="px-4 py-2 border border-gray-400 rounded-lg focus:outline-none focus:border-gray-700" />
+
+                <label for="email" class="text-lg">Email:</label>
+                <input type="email" id="email" name="email" required class="px-4 py-2 border border-gray-400 rounded-lg focus:outline-none focus:border-gray-700" />
+
+                <label for="message" class="text-lg">Message:</label>
+                <textarea id="message" name="message" required rows="4" class="px-4 py-2 border border-gray-400 rounded-lg focus:outline-none focus:border-gray-700"></textarea>
+
+                <button type="submit" class="btn-submit bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg transition duration-300">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p class="text-lg">&copy; 2024 Jeverly Ruth Cabinto. All rights reserved.</
